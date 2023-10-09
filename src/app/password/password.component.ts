@@ -25,7 +25,7 @@ export class PasswordComponent {
       this.setSectionColors('green', 'green', 'green');
     } else if ((hasLetters && hasNumbers) || (hasLetters && hasSymbols) || (hasNumbers && hasSymbols)) {
       this.setSectionColors('yellow', 'yellow', 'gray');
-    } else if (isAlphaNumeric) {
+    } else if (isAlphaNumeric || hasSymbols) {
       this.setSectionColors('red', 'gray', 'gray');
     }
   }
